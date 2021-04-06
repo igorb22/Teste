@@ -1,0 +1,96 @@
+﻿@model AvonaleTeste.Models.RepositoryViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+
+<h2>Detalhes</h2>
+
+<div>
+    @if (Model.Favorite)
+    {
+        <ul>
+            <li>
+                <h4>Adicionado aos meus favoritos</h4>
+            </li>
+        </ul>
+    }
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Owner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Owner.Login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Languagem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Languagem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedAt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedAt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contribuitores)
+        </dt>
+
+        <dd>
+            <ul>
+                @foreach (var item in Model.Contribuitores)
+                {
+                    <li>
+                        @item.Login
+                    </li>
+                }
+            </ul>
+        </dd>
+    </dl>
+</div>
+@if (TempData["mensagemErro"] != null)
+{
+    <ul>
+        <li>
+            <h4 class="text-danger">@TempData["mensagemErro"]</h4>
+        </li>
+    </ul>
+
+}
+<p>
+
+    <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-xs"> Voltar </a> |
+    @if (!Model.Favorite)
+    {
+        <a href="@Url.Action("FavoriteRepository", "Home", new { id = Model.Id })" class="btn btn-success btn-xs"> Favoritar </a>
+    }
+</p>

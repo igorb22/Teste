@@ -1,0 +1,7 @@
+C:\Users\Igor Bruno\source\Teste\FuncoesRecursivas\bin\Debug\FuncoesRecursivas.exe.config
+C:\Users\Igor Bruno\source\Teste\FuncoesRecursivas\bin\Debug\FuncoesRecursivas.exe
+C:\Users\Igor Bruno\source\Teste\FuncoesRecursivas\bin\Debug\FuncoesRecursivas.pdb
+C:\Users\Igor Bruno\source\Teste\FuncoesRecursivas\obj\Debug\FuncoesRecursivas.csprojAssemblyReference.cache
+C:\Users\Igor Bruno\source\Teste\FuncoesRecursivas\obj\Debug\FuncoesRecursivas.csproj.CoreCompileInputs.cache
+C:\Users\Igor Bruno\source\Teste\FuncoesRecursivas\obj\Debug\FuncoesRecursivas.exe
+C:\Users\Igor Bruno\source\Teste\FuncoesRecursivas\obj\Debug\FuncoesRecursivas.pdb
